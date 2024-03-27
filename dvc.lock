@@ -1,0 +1,59 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python3.11 prepare.py
+    deps:
+    - path: data/99999913724.csv
+      hash: md5
+      md5: 942c66d98b58a5e9333c62f84427c5cd
+      size: 322119
+    - path: prepare.py
+      hash: md5
+      md5: 85a5e9279b577fb9a1c535f268000223
+      size: 767
+    params:
+      params.yaml:
+        csv_title.gt_index:
+        - 53
+    outs:
+    - path: gt.pickle
+      hash: md5
+      md5: 93a185dc46c4175080856b3b0a6d46cb
+      size: 360
+  process:
+    cmd: python3.11 process.py
+    deps:
+    - path: data/99999913724.csv
+      hash: md5
+      md5: 942c66d98b58a5e9333c62f84427c5cd
+      size: 322119
+    - path: process.py
+      hash: md5
+      md5: ae72494f954d9526ee51efc4300b80bd
+      size: 883
+    params:
+      params.yaml:
+        csv_title.compute_index:
+        - - 34
+          - 53
+    outs:
+    - path: compute.pickle
+      hash: md5
+      md5: ed285650af3f0a69c745634a3d3ac21a
+      size: 358
+  evaluate:
+    cmd: python3.11 evaluate.py
+    deps:
+    - path: compute.pickle
+      hash: md5
+      md5: ed285650af3f0a69c745634a3d3ac21a
+      size: 358
+    - path: gt.pickle
+      hash: md5
+      md5: 93a185dc46c4175080856b3b0a6d46cb
+      size: 360
+    outs:
+    - path: r2_score.pickle
+      hash: md5
+      md5: 11a31c485852c00e56d75fa3ed1c22fc
+      size: 164

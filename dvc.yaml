@@ -1,0 +1,26 @@
+stages:
+  prepare:
+    cmd: python3.11 prepare.py
+    deps:
+      - prepare.py
+      - data/99999913724.csv
+    params:
+      - csv_title.gt_index
+    outs:
+      - gt.pickle
+  process:
+    cmd: python3.11 process.py
+    deps:
+      - process.py
+      - data/99999913724.csv
+    params:
+      - csv_title.compute_index
+    outs:
+      - compute.pickle
+  evaluate:
+    cmd: python3.11 evaluate.py
+    deps:
+      - compute.pickle
+      - gt.pickle
+    outs:
+      - r2_score.pickle
