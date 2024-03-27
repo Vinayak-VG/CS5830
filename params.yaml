@@ -1,4 +1,11 @@
-csv_title:
+params:
+  seed: 123
+  year: 2023
+  n_locs: 4
+  file_names: ["99999913724.csv", "99999913752.csv", "99999913782.csv", "99999923272.csv"]
   gt_index: [53]
   compute_index: [[34, 53]]
+  
+
+
 

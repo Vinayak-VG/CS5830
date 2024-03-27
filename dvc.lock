@@ -9,11 +9,11 @@ stages:
       size: 322119
     - path: prepare.py
       hash: md5
-      md5: 85a5e9279b577fb9a1c535f268000223
-      size: 767
+      md5: 5d52102362fde7e9442813777d05d433
+      size: 841
     params:
       params.yaml:
-        csv_title.gt_index:
+        params.gt_index:
         - 53
     outs:
     - path: gt.pickle
@@ -29,11 +29,11 @@ stages:
       size: 322119
     - path: process.py
       hash: md5
-      md5: ae72494f954d9526ee51efc4300b80bd
-      size: 883
+      md5: d04d368c47215d0b4097e52f4097dc70
+      size: 962
     params:
       params.yaml:
-        csv_title.compute_index:
+        params.compute_index:
         - - 34
           - 53
     outs:
@@ -57,3 +57,22 @@ stages:
       hash: md5
       md5: 11a31c485852c00e56d75fa3ed1c22fc
       size: 164
+  download:
+    cmd: python3.11 download.py
+    deps:
+    - path: download.py
+      hash: md5
+      md5: a12fe20dcd3718dbb2fa34ed95e09674
+      size: 479
+    params:
+      params.yaml:
+        params.file_names:
+        - 99999913724.csv
+        - 99999913752.csv
+        - 99999913782.csv
+        - 99999923272.csv
+    outs:
+    - path: data/99999913724.csv
+      hash: md5
+      md5: 942c66d98b58a5e9333c62f84427c5cd
+      size: 322119

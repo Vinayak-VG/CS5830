@@ -1,11 +1,19 @@
 stages:
+  download:
+    cmd: python3.11 download.py
+    deps:
+      - download.py
+    params:
+      - params.file_names
+    outs:
+      - data/99999913724.csv
   prepare:
     cmd: python3.11 prepare.py
     deps:
       - prepare.py
       - data/99999913724.csv
     params:
-      - csv_title.gt_index
+      - params.gt_index
     outs:
       - gt.pickle
   process:
@@ -14,7 +22,7 @@ stages:
       - process.py
       - data/99999913724.csv
     params:
-      - csv_title.compute_index
+      - params.compute_index
     outs:
       - compute.pickle
   evaluate:
