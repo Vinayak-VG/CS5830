@@ -9,8 +9,8 @@ stages:
       size: 322119
     - path: prepare.py
       hash: md5
-      md5: 5d52102362fde7e9442813777d05d433
-      size: 841
+      md5: 6f5b68f4be5e07a03abf318f09b4008a
+      size: 1265
     params:
       params.yaml:
         params.gt_index:
@@ -29,8 +29,8 @@ stages:
       size: 322119
     - path: process.py
       hash: md5
-      md5: d04d368c47215d0b4097e52f4097dc70
-      size: 962
+      md5: ab4fa88ac122b78a582e8eca76ed985c
+      size: 1434
     params:
       params.yaml:
         params.compute_index:
@@ -62,8 +62,8 @@ stages:
     deps:
     - path: download.py
       hash: md5
-      md5: a12fe20dcd3718dbb2fa34ed95e09674
-      size: 479
+      md5: 29938555bd18eeb8aaf3b98a4a4fdfb1
+      size: 655
     params:
       params.yaml:
         params.file_names:

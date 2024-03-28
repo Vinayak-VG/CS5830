@@ -18,6 +18,7 @@ def evaluate(pred_pkl, gt_pkl):
         gt_values = gt[reading_name]
         r2_metric[reading_name] = r2_score(pred_values, gt_values)
     
+    print(r2_metric)
     # Save the computed R2 scores to a pickle file
     with open('r2_score.pickle', 'wb') as handle:
         pickle.dump(r2_metric, handle, protocol=pickle.HIGHEST_PROTOCOL)
