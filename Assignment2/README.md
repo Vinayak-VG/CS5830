@@ -27,7 +27,8 @@ The assignment outlines the following tasks to be performed by the data pipeline
 1. Clone the repository to your local machine:
 
    ```markdown
-   git clone https://github.com/your-username/climatological-data-pipeline.git
+   git clone https://github.com/Vinayak-VG/CS5830.git
+   cd Assignment2
    ```
 
 2. Install Apache Airflow and necessary dependencies:
@@ -36,7 +37,7 @@ The assignment outlines the following tasks to be performed by the data pipeline
    pip install apache-airflow
    ```
 
-3. Set up Apache Airflow environment and configure the DAGs (Directed Acyclic Graphs) for `datapipeline.py` and `dataanalytics.py` based on your requirements.
+3. Set up Apache Airflow environment and configure the DAGs (Directed Acyclic Graphs) for `datapipeline.py` and `dataanalytics.py` 
 
 4. Start the Airflow scheduler and web server:
 
@@ -45,9 +46,9 @@ The assignment outlines the following tasks to be performed by the data pipeline
    airflow webserver -p 8080 &
    ```
 
-5. Access the Airflow web interface at `http://localhost:8080` to monitor and manage your data pipeline.
+5. Access the Airflow web interface at `http://localhost:8080` to monitor and manage the data pipeline.
 
-6. Trigger the DAGs manually or set them to autotrigger as specified in the assignment outline.
+6. Trigger the DAGs manually or set them to auto trigger as specified in the assignment outline.
 
 ## Requirements
 
@@ -59,17 +60,8 @@ The assignment outlines the following tasks to be performed by the data pipeline
 - Apache Beam
 - ffmpeg (optional for creating GIF animation)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - This project uses data from the National Centers for Environmental Information (NCEI).
 - Visualization and processing tasks are implemented using Apache Beam and geospatial libraries like geopandas.
-- GIF animation creation is optional and requires suitable tools like ffmpeg.
-  
-Feel free to customize the pipeline and add additional functionalities as needed for your climatological data analysis.
-```
-
-You can now copy and paste this entire content directly into your README.md file on GitHub.
+- GIF animation creation requires suitable tools like ffmpeg.
