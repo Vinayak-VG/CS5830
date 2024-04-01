@@ -1,6 +1,3 @@
-My apologies for the oversight. Here is the README.md content with every text in markdown format:
-
-```markdown
 # Climatological Data Pipeline with Apache Airflow
 
 This repository contains the code for setting up a data pipeline using Apache Airflow to acquire public domain climatological data from the National Centers for Environmental Information (NCEI). The pipeline performs various tasks such as fetching data files, processing them, generating visualizations, and creating animations.
