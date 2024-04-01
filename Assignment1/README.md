@@ -16,7 +16,8 @@ This repository contains the code for a machine-learning pipeline designed for t
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/digit-classification.git
+   git clone https://github.com/Vinayak-VG/CS5830.git
+   cd Assignment1
    ```
 
 2. Generate the dataset:
