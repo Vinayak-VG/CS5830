@@ -6,15 +6,6 @@ This repository contains the code for setting up a pipeline to verify the consis
 
 The pipeline aims to extract monthly aggregates from the dataset and compare them against computed monthly averages from daily data points. The comparison is done using the R2 score, with a threshold of 0.9 to determine consistency (C).
 
-### Pipeline Components
-- **download.py**: Script to download the climatological dataset.
-- **prepare.py**: Prepares the dataset for processing and evaluation.
-- **process.py**: Processes the dataset to extract monthly aggregates.
-- **evaluate.py**: Evaluates the consistency of monthly aggregates using R2 score.
-- **dvc.yaml**: Configuration file for Data Version Control (DVC).
-- **params.yaml**: Parameter file for configuring pipeline parameters.
-- **data/**: Directory containing the dataset.
-
 ## Pipeline Setup and Execution
 
 Follow these steps to set up and run the pipeline:
