@@ -1,4 +1,4 @@
-# MNIST Digit Classification API
+# Build a FastAPI for MNIST digit prediction
 
 This repository contains a FastAPI implementation for digit classification using the MNIST dataset. The API allows users to upload an image of a handwritten digit, and it returns the predicted digit value.
 
