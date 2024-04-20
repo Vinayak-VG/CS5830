@@ -4,7 +4,7 @@ This repository contains a FastAPI implementation for digit classification using
 
 ## Overview
 
-The goal of this assignment was to build a FastAPI that exposes the MNIST digit classification functionality through a REST API. Users can upload an image of a handwritten digit, and the API will respond with the predicted digit value.
+This assignment aimed to build a FastAPI that exposes the MNIST digit classification functionality through a REST API. Users can upload an image of a handwritten digit, and the API will respond with the predicted digit value.
 
 ## Files
 
@@ -16,10 +16,9 @@ The goal of this assignment was to build a FastAPI that exposes the MNIST digit 
 
 ## Setup
 
-1. Clone the repository: `git clone https://github.com/Vinayak-VG/CS5830.git`
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Start the FastAPI server: `uvicorn fast_api_task1:app` (for Task 1) or `uvicorn fast_api_task2:app` (for Task 2)
-4. Access the API documentation at `http://127.0.0.1:8000/docs`
+1. Clone the repository: `git clone https://github.com/Vinayak-VG/CS5830.git` and cd Assignment6
+2. Start the FastAPI server: python3.11 fast_api_task1.py "mnist.pth" (for Task 1) or python3.11 fast_api_task2.py "mnist.pth" (for Task 2)
+3. Access the API documentation at `http://127.0.0.1:8000/docs`
 
 ## Usage
 
@@ -33,3 +32,7 @@ The goal of this assignment was to build a FastAPI that exposes the MNIST digit 
 ## Testing
 
 For Task 2, draw 10 images of handwritten digits using tools like MS Paint or a touchscreen. Upload these images to the API and record the performance (number of correctly predicted digits out of 10).
+
+## Report
+
+Detailed Analysis can be found here - [Report](https://docs.google.com/document/d/1tEzUKdUY8yH9pytzDBXSx7BpcTISu9qSyX_hsw8X1hQ/edit?usp=sharing)
