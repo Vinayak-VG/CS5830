@@ -20,3 +20,7 @@ After running the notebook, you should see 10 different experiments in the MLflo
 ## Results
 
 The trained models and their performance metrics are logged in the MLflow tracking server. You can visualize and compare the experiments using the MLflow UI at `http://127.0.0.1:5100`.
+
+## Report
+
+Detailed Analysis can be found here - [Report](https://docs.google.com/document/d/1GeOPKOJHF2bMpLz8x6T-5m1cofHN4SR3Fili5bD9Ank/edit?usp=sharing)
