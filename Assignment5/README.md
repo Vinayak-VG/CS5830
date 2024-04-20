@@ -4,7 +4,7 @@ This repository contains a Jupyter Notebook (assign5.ipynb) that builds and comp
 
 ## Assignment Overview
 
-The goal of this assignment was to build and compare several neural network models for the MNIST digit classification task, with different model configuration settings. Each configuration was expected to exhibit different performance patterns over the training epochs. To streamline the process of tracking metrics and parameters, MLflow was utilized through the `mlflow.autolog()` function in the provided Jupyter Notebook (MNIST.ipynb). The objective was to set up MLflow, integrate it with the notebook, and ensure that at least 10 different model variations were logged as separate experiments in the MLflow console.
+The goal of this assignment was to build and compare several neural network models for the MNIST digit classification task, with different model configuration settings. Each configuration was expected to exhibit different performance patterns over the training epochs. To streamline the process of tracking metrics and parameters, MLflow was utilized through the `mlflow.autolog()` function. The objective was to set up MLflow, integrate it with the notebook, and ensure that at least 10 different model variations were logged as separate experiments in the MLflow console.
 
 ## Setup
 
