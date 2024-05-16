@@ -32,7 +32,7 @@ deepfake-detection/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/deepfake-detection.git
+git clone https://https://github.com/Vinayak-VG/CS5830.git
 cd deepfake-detection
 ```
 
