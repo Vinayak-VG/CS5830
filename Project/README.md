@@ -5,7 +5,7 @@ This project aims to develop a pipeline for Deepfake detection, incorporating va
 ## Project Structure
 
 The project is structured as follows:
-
+<!-- 
 deepfake-detection/
 * data/
     * raw/
@@ -25,7 +25,7 @@ deepfake-detection/
 * README.md
 * requirements.txt
 * Dockerfile
-* docker-compose.yml
+* docker-compose.yml -->
 
 ## Setup
 
