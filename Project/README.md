@@ -83,8 +83,10 @@ You can then log model runs and retrieve experiment details using the MLFlow Pyt
 The project includes a REST API for serving the Deepfake detection model. The API endpoints are defined in src/api/app.py.
 To start the API server, run:
 ```
-uvicorn src.api.app:app --reload
+python3 fast_api_test.py "deepfake.pt"
 ```
+
+Then visit 127.0.0.1:8000/docs and you can test out your model.
 
 The API is instrumented with Prometheus to capture metrics. You can access the Prometheus metrics endpoint at http://localhost:8000/metrics.
 
