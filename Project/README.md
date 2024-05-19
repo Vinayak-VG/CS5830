@@ -74,7 +74,7 @@ You can then access the Airflow UI at http://localhost:8080 and monitor the prog
 The model building process is tracked using MLFlow. You can log model parameters, metrics, and artifacts to the MLFlow tracking server.
 To start the MLFlow tracking server, run:
 ```
-mlflow server --backend-store-uri /path/to/mlflow/tracking/dir --default-artifact-root /path/to/mlflow/artifacts
+mlflow ui -p 5100
 ```
 You can then log model runs and retrieve experiment details using the MLFlow Python API.
 
