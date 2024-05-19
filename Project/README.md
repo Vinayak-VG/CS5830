@@ -7,7 +7,7 @@ This project aims to develop a pipeline for Deepfake detection, incorporating va
 1. Clone the repository:
 
 ```bash
-git clone https://https://github.com/Vinayak-VG/CS5830.git
+git clone https://github.com/Vinayak-VG/CS5830.git
 cd Project
 ```
 
