@@ -112,7 +112,3 @@ docker run -p 8000:8000 deepfake-detection-api
 ```
 
 This will start the API server and expose it on http://localhost:8000.
-
-License
-
-This project is licensed under the MIT License.
