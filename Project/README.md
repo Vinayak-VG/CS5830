@@ -2,31 +2,6 @@
 
 This project aims to develop a pipeline for Deepfake detection, incorporating various components such as Apache Spark, Apache Airflow, MLFlow, REST API, Prometheus, Grafana, and Docker.
 
-## Project Structure
-
-The project is structured as follows:
-<!-- 
-deepfake-detection/
-* data/
-    * raw/
-    * processed/
-* notebooks/
-* src/
-    * data/
-    * models/
-    * api/
-    * utils/
-* docs/
-* models/
-* metrics/
-* reports/
-* figures/
-* .gitignore
-* README.md
-* requirements.txt
-* Dockerfile
-* docker-compose.yml -->
-
 ## Setup
 
 1. Clone the repository:
