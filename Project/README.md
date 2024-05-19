@@ -33,7 +33,7 @@ deepfake-detection/
 
 ```bash
 git clone https://https://github.com/Vinayak-VG/CS5830.git
-cd deepfake-detection
+cd Project
 ```
 
 2. Install the required dependencies:
@@ -48,16 +48,11 @@ The data preprocessing pipeline is implemented using Apache Spark. It includes t
 
 - Data acquisition automation
 - Data cleansing
-- Data munging
-- Data transformation
-- Data vectorization
 
 To run the data preprocessing pipeline, execute the following command:
 ```
 spark-submit src/data/preprocess.py
 ```
-
-This will load the raw data from data/raw, perform the necessary preprocessing steps, and save the processed data to data/processed.
 
 4. Pipeline Orchestration (Apache Airflow)
 
@@ -86,7 +81,7 @@ To start the API server, run:
 python3 fast_api_test.py "deepfake.pt"
 ```
 
-Then visit 127.0.0.1:8000/docs and you can test out your model.
+Then visit http://127.0.0.1:8000/docs and you can test out your model.
 
 The API is instrumented with Prometheus to capture metrics. You can access the Prometheus metrics endpoint at http://localhost:8000/metrics.
 
